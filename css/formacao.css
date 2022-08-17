@@ -1,0 +1,164 @@
+.formacao {
+  background: #292929;
+  color: white;
+
+}
+
+.formacao-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+
+.formacao-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
+.formacao .subtitulo {
+  color: #000000;
+  max-width: 6ch;
+}
+
+.formacao .experiencia-texto {
+  color: #a3a3a3;
+}
+
+.formacao .experiencia-texto strong {
+  color: white;
+}
+
+.cursos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.curso-lista {
+  background: black;
+  border-radius: 4px;
+  padding: 20px;
+  justify-items: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+.curso-nome {
+  color: #a3a3a3;
+  text-transform:uppercase;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+  position: relative;
+} 
+
+.curso-nome::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -24px;
+  top: -4px;
+}
+
+.curso-tipo {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+
+  position: relative;
+}
+
+.curso-local {
+    font-size: 1.125rem;
+    color: #a3a3a3;
+}
+
+.cursos-pos {
+  margin-top: 60px;
+}
+
+.pos li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.pos span {
+  color: #8f8f8f;
+}
+
+.pos h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+
+.idiomas h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+.idiomas li {
+  font-size: 1.125rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.idiomas span {
+  color: #8f8f8f;
+}
+
+
+.js-accordion h3::after  {
+  content: '🔻';
+}
+.js-accordion h3.ativo::after  {
+  content: '🔺';
+}
+
+.js-accordion ul {
+  display: none;
+}
+
+.js-accordion ul.ativo  {
+ content: ⏩;
+ display: block;
+ animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+from {
+ opacity: 0;
+ max-height: 0;
+}
+to {
+ max-height: 200px;
+ opacity: 1;
+}
+}
+
+
